@@ -4,11 +4,7 @@ function toggleMenu(event) {
 }
 
 
-/**
- * Creator           : Coding's Time
- * Youtube Channel   : https://www.youtube.com/channel/UC6dnKqrImGWqMb9ty1n0Ziw
- * Github Profile    : https://github.com/codingstime
- */
+
 
 let onSlide = false;
 
