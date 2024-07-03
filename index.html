@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Header</title>
+    
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- <header>
+        <nav class="nav">
+            <a href="/" >
+                <span class="rainbow-text">RAINBOW</span>
+                <span class="blue-text">CONCEPT SCHOOL</span>
+            </a>
+            <div class="hamburger" onclick="toggleMenu(event)">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="nav__link hide show-on-desktop" id="nav__link1">
+                <span><a href="#Home">Home</a></span>
+                <span><a href="#About"></i> About</a></span>
+                <span><a href="#Gallery">Gallery</a></span>
+                <span><a href="#Facilities"> Facilities</a></span>
+                <span><a href="#Activities"> Activities</a></span>
+                <span><a href="#Contactus"> Contact Us</a></span>
+                <span><a href="#Webelieve"> We believe</a></span>
+            </div>
+        </nav>
+    </header> -->
+
+    <nav>
+      <input id="nav-toggle" type="checkbox">
+      <!-- <div class="logo">MINZ<strong>CODE</strong></div> -->
+      <div class="school-name">
+        <span class="rainbow">RAINBOW</span>
+        <span class="concept-school">CONCEPT SCHOOL</span>
+    </div>
+      <ul class="links">
+        <span><li><a href="#Home">Home</a></li></span>
+       <span> <li><a href="#About">About</a></li></span>
+        <span> <li><a href="#Gallery">Gallery</a></li></span>
+      <span> <li><a href="#Activities">Activities</a></li></span> 
+      <span>  <li><a href="#Contactus">Contact Us</a></li></span>
+      <span>  <li><a href="#Webelieve">We believe</a></li></span>
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+    
+    <section id="Home">
+        <div class="logo">
+            <img src="./img//rainbowlogo.jpg" alt="Logo" class="logo-image">
+          </div>
+   <div class="carousel">
+    <div class="carousel_inner">
+       <div class="carousel_item carousel_item__active">
+          <img src="./img/imgsli4.jpg" alt="" class="carousel_img">
+          <!-- <div class="carousel_caption">
+             <h1 class="carousel_title">Change It As You See Fit</h1>
+             <p class="carousel_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id cupiditate
+                corporis laudantium quae velit quam.</p>
+          </div> -->
+       </div>
+       <div class="carousel_item">
+          <img src="./img/imgsli2.jpg" alt="" class="carousel_img">
+       </div>
+       <div class="carousel_item">
+          <img src="./img/image5.jpg" alt="" class="carousel_img">
+       </div>
+       <!-- <div class="carousel_item">
+        <img src="./img/image4.jpg" alt="" class="carousel_img">
+     </div> -->
+     <div class="carousel_item">
+        <img src="./img/slider5.jpeg" alt="" class="carousel_img">
+     </div>
+     
+    </div>
+
+    <div class="carousel_indicator">
+       <button class="carousel_dot carousel_dot__active"></button>
+       <button class="carousel_dot"></button>
+       <button class="carousel_dot"></button>
+    </div>
+
+    <div class="carousel_control">
+       <button class="carousel_button carousel_button__prev">
+          <i class="fas fa-chevron-left"></i>
+       </button>
+       <button class="carousel_button carousel_button__next">
+          <i class="fas fa-chevron-right"></i>
+       </button>
+    </div>
+ </div>
+    </section>
+    <section>
+      <div class="container4">
+        <div class="content">
+          <h1 class="welcome-text blink2">
+            WELCOME
+          </h1>
+          <p class="description">
+            Welcome to Rainbow Concept School & Play School! Established by SPR Memorial Educational society in 2007 recognized Government of Telangana State. We are delighted to have you join our vibrant and nurturing community. At Rainbow, we believe in fostering a love for learning from an early age, providing a safe and stimulating environment where children can explore, discover, and grow. Our dedicated team of educators is committed to delivering a holistic education that balances academic excellence with creativity, play, and social development. Together, we create a rainbow of opportunities for every child to shine brightly. Welcome to a place where imaginations soar and lifelong friendships begin!
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="Webelieve">
+      <h1 class=" header blink">We Believe</h1>
+  <div class="slider-container">
+    <div class="text-content">
+      <span class="word rainbow-text">We</span>
+      <span class="word rainbow-text">DREAM</span>
+      <span class="word rainbow-text">of</span>
+      <span class="word rainbow-text">a</span>
+      <span class="word rainbow-text">school</span>
+      <span class="word rainbow-text">which</span>
+      <span class="word rainbow-text">is</span>
+      <span class="word rainbow-text">NOT</span>
+      <span class="word rainbow-text">a</span>
+      <span class="word rainbow-text">learning</span>
+      <span class="word rainbow-text">factory,</span>
+      <span class="word rainbow-text">but</span>
+      <span class="word rainbow-text">a</span>
+      <span class="word rainbow-text">GARDEN</span>
+      <span class="word rainbow-text">that</span>
+      <span class="word rainbow-text">lets</span>
+      <span class="word rainbow-text">the</span>
+      <span class="word rainbow-text">child</span>
+      <span class="word rainbow-text">BLOSSOM</span>
+    </div>
+    <div class="image-container" style="background-image: url('/scroll1.jpg');"></div>
+  </div>
+
+    </section>
+
+
+    <section>
+      <div class="achievements-section">
+          <div class="achievements-container">
+            <div class="achievement-item">
+              <h2 class="achievement-value">
+                <span class="animated-number" data-value="475">475</span>+
+              </h2>
+              <p class="achievement-metric">Students</p>
+            </div>
+            <div class="achievement-item">
+              <h2 class="achievement-value">
+                ~<span class="animated-number" data-value="30">30</span>+
+              </h2>
+              <p class="achievement-metric">Teachers</p>
+            </div>
+            <div class="achievement-item">
+              <h2 class="achievement-value">
+                <span class="animated-number" data-value="100">100</span>+
+              </h2>
+              <p class="achievement-metric">Children & Student Awards</p>
+            </div>
+            <div class="achievement-item">
+              <h2 class="achievement-value">
+                <span class="animated-number" data-value="17">17</span>
+              </h2>
+              <p class="achievement-metric">Years ago, school began.</p>
+            </div>
+          </div>
+        </div>
+  </section>
+
+
+    <section class="text-black" id="About">
+      <h1 class="header blink">About Us</h1>
+      <div class="container">
+        <div class="image-section">
+          <img src="./img/printimage.jpeg" width="500" height="400" alt="Print Image">
+          <img src="./img/banner2.jpeg" width="500" height="300" alt="Banner Image">
+        </div>
+        <div class="content-section">
+          <p class="text-base lg:text-lg text-justify">
+            Rainbow Concept School & Play School, established by SPR Memorial Educational Society in 2007, stands as a beacon of holistic education and progressive learning. From playgroup to Class X, the institution offers a unique blend of CBSE and ICSE integrated curriculum, ensuring a comprehensive educational experience for its students.<br/>
+            What sets Rainbow Concept School apart is its unwavering commitment to nurturing not just academic excellence but also fostering all-round development. By integrating NEET Medical and JEE IIT foundation programs into its curriculum, the school paves the way for students to excel in competitive exams, opening doors to prestigious institutions and future careers in science and medicine.<br/>
+            Aligned with the National Education Policy (NEP) 2020, Rainbow Concept School is at the forefront of educational innovation, constantly evolving to meet the demands of the 21st century. Emphasizing the development of critical thinking, creativity, communication, collaboration, and other essential skills, the school ensures that students are well-equipped to thrive in a rapidly changing world.<br/>
+            Under the umbrella of SPR Memorial Educational Society, Rainbow Concept School & Play School has become synonymous with excellence, providing a nurturing environment where every child is encouraged to explore their potential and achieve their dreams. With a dedicated faculty, state-of-the-art facilities, and a student-centered approach, Rainbow Concept School continues to inspire and empower generations of learners to reach for the stars and make their mark on the world.
+          </p>
+          <div class="tabs">
+            <p class="tab-button" onclick="selectTab('skills')">Skills</p>
+            <p class="tab-button" onclick="selectTab('education')">Education</p>
+            <p class="tab-button" onclick="selectTab('certifications')">Certifications</p>
+          </div>
+          <div class="tab-content" id="tab-content">
+            <ul class="list-disc">
+              <li>Communication Skills</li>
+              <li>Critical Thinking Skills</li>
+              <li>Social Skills</li>
+              <li>Emotional Intelligence</li>
+              <li>Creativity</li>
+              <li>Time Management and Organization</li>
+              <li>Problem-Solving Skills</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+  
+      <div class="text-center text-black p-4">
+          
+          <div class="founder-container">
+              <h1 class="header blink">Founding Members</h1>
+              <blockquote class="founder-quote">
+                "Education is not about the learning of facts but the training of minds to think"
+              </blockquote>
+              <p class="founder-description">
+                Rainbow Concept School & Play School, founded by visionary leaders, is
+                guided by D. Sudha Rani, Chairperson, whose dedication and deep
+                community values ensure the institution's commitment to quality
+                education and holistic development. Dr. MD Misbah Uddin, Managing
+                Director, upholds the school's highest standards with a relentless
+                pursuit of excellence in operations and educational quality. Dr. S Sameer
+                Al-Hussaini, Academic Director, leverages his extensive educational
+                expertise to innovate and create a nurturing learning environment
+                centered on student needs. Together, under their leadership, Rainbow
+                Concept School & Play School continues to flourish as a beacon of
+                educational excellence.
+              </p>
+              <div class="founder-gallery">
+                <div class="founder-item">
+                  <div class="founder-image-container">
+                    <img src="./img/chairperson.jpg" alt="D. Sudha Rani Chairperson" class="founder-image">
+                  </div>
+                  <p class="founder-name">D.SUDHA RANI<br>Chairperson</p>
+                </div>
+                <div class="founder-item">
+                  <div class="founder-image-container bg-purple-200">
+                    <img src="./img/cc2.jpeg" alt="Dr. MD Misbah Uddin Managing Director" class="founder-image">
+                  </div>
+                  <p class="founder-name">Dr.MD MISBAH UDDIN<br>Managing Director</p>
+                </div>
+                <div class="founder-item">
+                  <div class="founder-image-container">
+                    <img src="./img/ccc.jpeg" alt="Dr. S Sameer Al-Hussaini Academic Director" class="founder-image">
+                  </div>
+                  <p class="founder-name">Dr. S SAMEER AL-HUSSAINI<br>Academic Director</p>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="fixed-icons">
+      <!-- Phone icon with Link -->
+      <a href="tel:+919908442253" class="icon bg-blue-500 hover:bg-blue-600">
+        <i class="fas fa-phone"></i>
+      </a>
+  
+      <!-- WhatsApp icon with Link -->
+      <a href="https://wa.me/918897116408" target="_blank" rel="noopener noreferrer" class="icon bg-green-500 hover:bg-green-600">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+  
+      <!-- Instagram icon with Link -->
+      <a href="https://www.instagram.com/rainbow_school_rcs?igsh=MXN2aWxhcjNjY256" target="_blank" rel="noopener noreferrer" class="icon bg-pink-500 hover:bg-pink-600">
+        <i class="fab fa-instagram"></i>
+      </a>
+  
+      <!-- Twitter icon with Link -->
+      <a href="https://twitter.com/example" target="_blank" rel="noopener noreferrer" class="icon bg-blue-400 hover:bg-blue-500">
+        <i class="fab fa-twitter"></i>
+      </a>
+  
+      <!-- Facebook icon with Link -->
+      <a href="https://www.facebook.com/example" target="_blank" rel="noopener noreferrer" class="icon bg-blue-800 hover:bg-blue-900">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+  
+      <!-- Email icon with Link -->
+      <a href="mailto:rainbowschool0236@gmail.com" class="icon bg-red-500 hover:bg-red-600">
+        <i class="fas fa-envelope"></i>
+      </a>
+  
+      <!-- YouTube icon with Link -->
+      <a href="https://www.youtube.com/example" target="_blank" rel="noopener noreferrer" class="icon bg-red-600 hover:bg-red-700">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+
+ 
+
+
+   
+
+
+    <section id="Gallery" class="ggg">
+      <h1 class="header blink" >Our Galllery</h1>
+
+      <!-- Modal Overlay -->
+      <div id="modal-overlay" class="modal-overlay"></div>
+    
+      <!-- Modal Content -->
+      <div id="modal" class="modal">
+        <img id="modal-img" class="modal-img" src="" alt="Team">
+        <svg id="modal-close" class="modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 10.585L18.586 4 20 5.414 13.414 12 20 18.586 18.586 20 12 13.414 5.414 20 4 18.586 10.586 12 4 5.414 5.414 4 12 10.585z"/></svg>
+      </div>
+    
+      <div class="gallery">
+        <!-- Images will be injected here by JavaScript -->
+      </div>
+    </section>
+
+
+
+
+    <section>
+        <div class="container1" id="Facilities">
+            <h1 class="header blink">Our Facilities</h1>
+            <div class="grid" id="facilities-container">
+                <!-- Facility items will be injected here by JavaScript -->
+            </div>
+        </div>
+    </section>
+    <section>
+        <div id="root"></div>
+    </section>
+
+
+
+    <section id="Activities">
+        <div class="activities-container">
+          <h1 class="header blink">Our Activities</h1>
+            <div class="activities-grid">
+                <!-- Activities will be dynamically generated here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="video-gallery">
+      <div class="container5">
+        <h1 class="header blink">
+          Video Testimonials
+        </h1>
+  
+        <div class="video-grid">
+          <!-- Videos will be dynamically added here -->
+          <div class="video-item">
+            <a href="./img/video1.webm" class="video-link">
+              <video src="./img/video1.webm" controls></video>
+           
+            </a>
+          </div>
+          <div class="video-item">
+            <a href="./img/video3.webm" class="video-link">
+              <video src="./img/video3.webm" controls></video>
+          
+            </a>
+          </div>
+          <div class="video-item">
+            <a href="./img/video4.webm" class="video-link">
+              <video src="./img/video4.webm" controls></video>
+          
+            </a>
+          </div>
+          <!-- Add more video items as needed -->
+        </div>
+      </div>
+    </section>
+
+
+<section>
+  <!-- <h2 class="title">Our School Feedback</h2> -->
+  <h1 class="header blink">Our School Feedback</h1>
+  <div class="feedback-list-wrapper">
+    <div class="long-image">
+      <img src="./img/image6.jpg" alt="Long Image" class="long-image">
+    </div>
+    <div class="feedback-list-container">
+      <div class="feedback-list" id="feedback-list">
+        <!-- Feedback items will be injected here by JavaScript -->
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="Contactus">
+    <h1 class="header blink">Contact Us</h1>
+  
+    <section class="contact-section" id="Contactus">
+      <!-- <div class="background-circle"></div> -->
+  
+      <div class="contact-info">
+        <div>
+          <p class="contact-text">
+            Rainbow Concept School <br>
+            Nursery to 10th Class <br><br>
+            <strong>Address:</strong> <br>
+            H. No 5-81, SP Nagar <br>
+            Bharat Nagar <br>
+            Moosapet <br>
+            Hyderabad <br>
+            Telangana 500018
+          </p>
+  
+          <div class="contact-details">
+            <a href="tel:+919398764573" class="contact-link">
+              <i class="fas fa-phone"></i>
+              <span>+919398764573</span>
+            </a>
+            <a href="tel:+914045064799" class="contact-link">
+              <i class="fas fa-phone"></i>
+              <span>+914045064799</span>
+            </a>
+            <a href="tel:+919908442253" class="contact-link">
+              <i class="fas fa-phone"></i>
+              <span>+919908442253</span>
+            </a>
+            <a href="mailto:rainbowschool0236@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <span>Rainbowschool0236@gmail.com</span>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div class="form-container">
+        <div id="popup" class="popup hidden">
+          <div class="popup-content">
+            <p>Thank you for contacting us...</p>
+          </div>
+        </div>
+        <p id="success-message" class="success-message hidden">Email sent successfully!</p>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="subject">Name</label>
+            <input name="subject" type="text" id="subject" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input name="email" type="email" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <button type="submit" class="submit-button">Submit</button>
+        </form>
+      </div>
+    </section>
+    <div class="map">
+      <section class="map-section">
+         <iframe
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3805.84900924872!2d78.42414267516679!3d17.466939483433922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDI4JzAxLjAiTiA3OMKwMjUnMzYuMiJF!5e0!3m2!1sen!2sin!4v1718246559733!5m2!1sen!2sin"
+            style="border:0; padding: 20px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+      
+      </section>
+   </div>
+  
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="logo-text">
+        <!-- Replace with your logo image if needed -->
+        <!--<img src="/rainbowlogo.jpg" alt="Rainbow Logo" class="logo">-->
+        <span class="footer-text">Designed by @RISTOGLOBALTECH</span>
+      </div>
+      <p class="footer-text">All rights reserved.</p>
+    </div>
+  </footer>
+  
+    <script src="script.js"></script>
+</body>
+</html>
