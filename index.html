@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Header</title>
+    <title>RAINBOW SCHOOL</title>
     
    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="styles.css">
@@ -255,6 +255,7 @@
         <i class="fab fa-facebook-f"></i>
       </a>
   
+    
       <!-- Email icon with Link -->
       <a href="mailto:rainbowschool0236@gmail.com" class="icon bg-red-500 hover:bg-red-600">
         <i class="fas fa-envelope"></i>
@@ -273,7 +274,7 @@
 
 
     <section id="Gallery" class="ggg">
-      <h1 class="header blink" >Our Galllery</h1>
+      <h1 class="header blink" >Our Gallery</h1>
 
       <!-- Modal Overlay -->
       <div id="modal-overlay" class="modal-overlay"></div>
@@ -398,6 +399,13 @@
               <i class="fas fa-envelope"></i>
               <span>Rainbowschool0236@gmail.com</span>
             </a>
+            <a href="mailto:rainbowschool0236@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <span>info@rainbowconceptschool</span>
+            </a>
+
+
+            <!-- info@rainbowconceptschool -->
           </div>
         </div>
       </div>
@@ -409,19 +417,20 @@
           </div>
         </div>
         <p id="success-message" class="success-message hidden">Email sent successfully!</p>
-        <form id="contact-form">
+        <form id="contact-form" action="#"  > 
           <div class="form-group">
             <label for="subject">Name</label>
-            <input name="subject" type="text" id="subject" required>
+            <input name="subject" type="text" id="subject"  autocomplete="off">
           </div>
           <div class="form-group">
             <label for="email">Email</label>
-            <input name="email" type="email" id="email" required>
+            <input name="email" type="email" id="email"  autocomplete="off" >
           </div>
           <div class="form-group">
             <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
+            <textarea name="message" id="message"   autocomplete="off"></textarea>
           </div>
+
           <button type="submit" class="submit-button">Submit</button>
         </form>
       </div>
@@ -439,6 +448,24 @@
   </section>
 
 
+
+
+  <div class="container">
+		<h2>Get in Touch</h2>
+		<form onsubmit="emailSend(); reset(); return false;">
+			<input type="text" id="name" placeholder="name" name="name" required>
+			<input type="text" id="phone" placeholder="phone" name="phone" required>
+			<input type="email" id="email" placeholder="email" name="email" required>
+			<button type="submit" class="btn">submit</button>
+		</form>
+	</div> 
+
+
+
+
+
+
+
   <footer class="footer">
     <div class="container">
       <div class="logo-text">
@@ -449,6 +476,9 @@
       <p class="footer-text">All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="https://smtpjs.com/v3/smtp.js">
+  </script>
   
     <script src="script.js"></script>
 </body>

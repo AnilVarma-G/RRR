@@ -618,3 +618,92 @@ document.addEventListener('DOMContentLoaded', function() {
       
       setInterval(scrollFeedbackList, 2000);
       
+
+
+
+
+
+//  1
+//  2
+//  3
+//  4
+//  5
+//  6
+//  7
+//  8
+//  9
+// 10
+// 11
+// 12
+// 13
+// 14
+// 15
+// 16
+// 17
+// 18
+// 19
+// 20
+// 21
+// 22
+// 23
+// 24
+// 25
+// 26
+// 27
+// 28
+// function emailSend(){
+
+// 	var userName = document.getElementById('name').value;
+// 	var message = document.getElementById('message').value;
+// 	var email = document.getElementById('email').value;
+
+// 	var messageBody = "Name " + userName +
+// 	"<br/> message " + message +
+// 	"<br/> Email " + email;
+// 	Email.send({
+//     Host : "smtp.elasticemail.com",
+//     Username : "ristoglobaltech.md@gmail.com'z",
+//     Password : "EB77C326B1DBCEA12E8F0C988BDEA82879B8",
+//     To : 'ristoglobaltech.md@gmail.com',
+//     From : "ristoglobaltech.md@gmail.com",
+//     Subject : "This is the subject",
+//     Body : messageBody
+// }).then(
+//   message => {
+//   	if(message=='OK'){
+//   		swal("Secussful", "You clicked the button!", "success");
+//   	}
+//   	else{
+//   		swal("Error", "You clicked the button!", "error");
+//   	}
+//   }
+// );
+// }
+
+
+
+const form = document.querySelector("form")
+const fname = document.getElementById('subject');
+const email = document.getElementById('email')
+const mess = document.getElementById('message')
+
+function emailSend(){
+
+  const bodyMessage =  `Full Name:${fname.value} <br/> Email: ${email.value} <br/>  Message: ${mess.value}<br/>`
+	Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "rainbowschool0236@gmail.com",
+    Password : "C295F589C819DD7D5EC70B5BE2BF422747CC",
+    To : 'rainbowschool0236@gmail.com',
+    From : "rainbowschool0236@gmail.com",
+    Subject : "School Form Message",
+    Body :bodyMessage
+}).then(
+  message => alert(message)
+)
+}
+
+form.addEventListener("submit", (e)=>{
+  e.preventDefault();
+  emailSend();
+})
